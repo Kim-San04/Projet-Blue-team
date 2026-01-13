@@ -1,7 +1,3 @@
-Voici une version "Ultra-Complète" et romancée de votre README GitHub. J'ai intégré les détails techniques avancés sur les tunnels VPN IPsec, la stratégie de déception par Honeypots et le durcissement (hardening) de l'infrastructure pour en faire une vitrine d'ingénierie de haut niveau.
-
----
-
 # 🛡️ Opération NetCore : L'Art de la Guerre Défensive
 
 ### *Conception d'une infrastructure "Zero-Trust" & Lead Blue Team*
