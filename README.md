@@ -8,6 +8,8 @@ Dans un cyber-espace saturé de menaces, la résilience n'est pas une option, c'
 
 En tant que **Chef de l'équipe Blue Team**, j'ai supervisé l'intégralité du cycle de vie sécuritaire : de la segmentation réseau initiale au durcissement des équipements face à une **Red Team** agressive, jusqu'à la validation finale par un audit de conformité.
 
+![WhatsApp Image 2026-01-14 at 08 57 27](https://github.com/user-attachments/assets/8f17d72c-e3e2-4f00-b223-776ed2662146)
+
 ---
 
 ## 🏗️ Architecture du Réseau : Segmentation & Zones de Confiance
@@ -34,7 +36,6 @@ L'infrastructure repose sur une séparation physique et logique stricte gérée 
 
 * 
 **Agence Distante :** `192.168.3.0/24`.
-
 
 
 ---
@@ -136,7 +137,8 @@ La technique sans processus n'est rien. Nous avons rédigé et appliqué 6 polit
 
 Le projet intègre une interface web dynamique pour la boutique de solutions informatiques de NetCore. Elle permet de gérer un catalogue d'équipements (MikroTik, pfSense, Cisco) et de simuler le flux transactionnel entre les zones DMZ et Inside.
 
-> **Regarder la présentation vidéo :** [Lien vers WhatsApp Video 2026-01-12 at 11.18.01.mp4]
+<img width="1886" height="778" alt="image" src="https://github.com/user-attachments/assets/eb22e90e-5b4e-4b12-804e-822e0674271d" />
+
 
 ---
 
