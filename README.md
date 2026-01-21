@@ -8,8 +8,6 @@ Dans un cyber-espace saturé de menaces, la résilience n'est pas une option, c'
 
 En tant que **Chef de l'équipe Blue Team**, j'ai supervisé l'intégralité du cycle de vie sécuritaire : de la segmentation réseau initiale au durcissement des équipements face à une **Red Team** agressive, jusqu'à la validation finale par un audit de conformité.
 
-![WhatsApp Image 2026-01-14 at 08 57 27](https://github.com/user-attachments/assets/8f17d72c-e3e2-4f00-b223-776ed2662146)
-
 ---
 
 ## 🏗️ Architecture du Réseau : Segmentation & Zones de Confiance
