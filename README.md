@@ -24,16 +24,13 @@ L'infrastructure repose sur une séparation physique et logique stricte gérée 
 
 ### 📍 Plan d'Adressage Stratégique
 
-* 
-**Siège (Inside) :** `192.168.4.0/24`.
+* **Siège (Inside) :** `192.168.4.0/24`.
 
 
-* 
-**DMZ :** `192.168.1.0/24`.
+* **DMZ :** `192.168.1.0/24`.
 
 
-* 
-**Agence Distante :** `192.168.3.0/24`.
+* **Agence Distante :** `192.168.3.0/24`.
 
 
 ---
@@ -67,8 +64,7 @@ crypto map CMAP 10 ipsec-isakmp
 
 Au-delà de la défense passive, j'ai instauré une défense active au sein de la zone **INSIDE**.
 
-* 
-**Déploiement :** Deux serveurs "leurres" (**HONEYPOT1 : 192.168.4.5** et **HONEYPOT2 : 192.168.4.2**) ont été configurés.
+* **Déploiement :** Deux serveurs "leurres" (**HONEYPOT1 : 192.168.4.5** et **HONEYPOT2 : 192.168.4.2**) ont été configurés.
 
 
 * **Objectif :** Détecter toute intrusion ayant franchi le périmètre ASA. Ces cibles faciles sont monitorées pour alerter l'équipe en cas de tentative de scan ou de connexion SSH non autorisée.
@@ -81,20 +77,16 @@ Au-delà de la défense passive, j'ai instauré une défense active au sein de l
 
 Un réseau est aussi faible que son maillon le plus bas. Nous avons sécurisé les commutateurs pour empêcher les attaques de proximité.
 
-* 
-**Port-Security :** Limitation à 5 adresses MAC par port avec apprentissage dynamique (*sticky*) pour bloquer tout branchement d'équipement pirate .
+* **Port-Security :** Limitation à 5 adresses MAC par port avec apprentissage dynamique (*sticky*) pour bloquer tout branchement d'équipement pirate .
 
 
-* 
-**BPDU Guard :** Désactivation automatique du port si un switch non autorisé est détecté (prévention de l'usurpation de Root Bridge).
+* **BPDU Guard :** Désactivation automatique du port si un switch non autorisé est détecté (prévention de l'usurpation de Root Bridge).
 
 
-* 
-**Storm Control :** Limitation du trafic broadcast à 50% pour prévenir le déni de service (DoS).
+* **Storm Control :** Limitation du trafic broadcast à 50% pour prévenir le déni de service (DoS).
 
 
-* 
-**Désactivation des services :** HTTP, Telnet et CDP ont été désactivés globalement pour réduire la surface d'attaque .
+* **Désactivation des services :** HTTP, Telnet et CDP ont été désactivés globalement pour réduire la surface d'attaque .
 
 
 
@@ -104,28 +96,22 @@ Un réseau est aussi faible que son maillon le plus bas. Nous avons sécurisé l
 
 La technique sans processus n'est rien. Nous avons rédigé et appliqué 6 politiques majeures :
 
-1. 
-**Filtrage ASA :** Refus par défaut (*Deny Any*).
+1. **Filtrage ASA :** Refus par défaut (*Deny Any*).
 
 
-2. 
-**Principe du Moindre Privilège :** Accès administratifs via SSH v2 uniquement.
+2. **Principe du Moindre Privilège :** Accès administratifs via SSH v2 uniquement.
 
 
-3. 
-**Gestion des Identités :** Mots de passe complexes (10+ caractères, symboles) via Active Directory.
+3. **Gestion des Identités :** Mots de passe complexes (10+ caractères, symboles) via Active Directory.
 
 
-4. 
-**Cycle de Patch :** Revue mensuelle et application sous 24h pour les failles critiques .
+4. **Cycle de Patch :** Revue mensuelle et application sous 24h pour les failles critiques .
 
 
-5. 
-**Sauvegarde & Restauration :** Tests hebdomadaires de restauration des serveurs critiques .
+5. **Sauvegarde & Restauration :** Tests hebdomadaires de restauration des serveurs critiques .
 
 
-6. 
-**Réponse aux Incidents :** Protocole formel d'isolation et d'analyse post-mortem .
+6. **Réponse aux Incidents :** Protocole formel d'isolation et d'analyse post-mortem .
 
 
 
@@ -144,14 +130,11 @@ Le projet intègre une interface web dynamique pour la boutique de solutions inf
 
 Le projet s'est conclu par une simulation d'attaque réelle :
 
-* 
-**Phase 1 (Reconnaissance) :** Tentatives de scans furtifs bloqués par l'ASA et journalisés.
+* **Phase 1 (Reconnaissance) :** Tentatives de scans furtifs bloqués par l'ASA et journalisés.
 
 
-* 
-**Phase 2 (Intrusion) :** Simulation d'une compromission DMZ ; l'attaquant a été stoppé par l'étanchéité DMZ/Inside.
+* **Phase 2 (Intrusion) :** Simulation d'une compromission DMZ ; l'attaquant a été stoppé par l'étanchéité DMZ/Inside.
 
 
-* 
-**Phase 3 (Mouvement Latéral) :** Les Honeypots ont permis de lever une alerte immédiate lors de la tentative de scan interne.
+* **Phase 3 (Mouvement Latéral) :** Les Honeypots ont permis de lever une alerte immédiate lors de la tentative de scan interne.
 
