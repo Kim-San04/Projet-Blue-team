@@ -4,7 +4,7 @@
 
 </div>
 
-# ð¡ï¸ OpÃ©ration NetCore : L'Art de la Guerre DÃ©fensive
+# Opération NetCore : L'Art de la Guerre Défensive
 
 <div align="center">
 
